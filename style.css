@@ -1,0 +1,228 @@
+@import url('https://fonts.googleapis.com/css?family=Lobster&display=swap');
+
+a,
+abbr,
+acronym,
+address,
+applet,
+article,
+aside,
+audio,
+b,
+big,
+blockquote,
+body,
+canvas,
+caption,
+center,
+cite,
+code,
+dd,
+del,
+details,
+dfn,
+div,
+dl,
+dt,
+em,
+embed,
+fieldset,
+figcaption,
+figure,
+footer,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+header,
+hgroup,
+html,
+i,
+iframe,
+img,
+ins,
+kbd,
+label,
+legend,
+li,
+mark,
+menu,
+nav,
+object,
+ol,
+output,
+p,
+pre,
+q,
+ruby,
+s,
+samp,
+section,
+small,
+span,
+strike,
+strong,
+sub,
+summary,
+sup,
+table,
+tbody,
+td,
+tfoot,
+th,
+thead,
+time,
+tr,
+tt,
+u,
+ul,
+var,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+body {
+    line-height: 1
+}
+
+ol,
+ul {
+    list-style: none
+}
+
+blockquote,
+q {
+    quotes: none
+}
+
+blockquote:after,
+blockquote:before,
+q:after,
+q:before {
+    content: '';
+    content: none
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0
+}
+
+/*regular setting*/
+body {
+
+    margin: 0 5rem 5rem 5rem;
+    background-color: gray;
+    color: white;
+   font-family: 'Lobster', cursive;
+
+}
+
+header {
+    font-size: 5rem;
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+}
+
+img{
+    max-width: 100%;
+    
+}
+.part1 {
+    text-align: center;
+    margin-bottom: 2rem;
+    
+}
+.part2{
+    background-color: #262626;
+    padding: 1rem;
+    border-radius: 0.2rem;
+}
+.part2 img {
+    height: 100%;
+    object-fit: cover;
+    width: 20rem;
+    height: 15rem;
+}
+.overlay{
+    position: absolute;
+    height: 130vh;
+    width: 100%;
+    background-color: rgba(105,105,105,0.8);
+    top: 0;
+    left: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+    
+    
+    
+}
+.show{
+    display: flex;
+}
+
+
+.part2 img:hover{
+    opacity: 0.5;
+    transform: scale(1.1);
+    
+}
+.overlay img{
+    width: 600px;
+        height:500px;
+}
+
+@media (min-width: 35rem) {
+    
+
+    .part2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        grid-gap: 1rem;
+    }
+
+}
+
+
+
+@media all and (min-width:80rem) {
+    .introduction {
+        font-size: 1.333rem;
+
+    }
+
+    .part2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr ;
+       
+        
+        
+    }
+}
